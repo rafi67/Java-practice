@@ -1,0 +1,8 @@
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push origin master"
+alias gpl="git pull origin master"
+alias gst="git stash"
+alias gsps="git stash pop @stast"
+alias gsl="git stash list"
