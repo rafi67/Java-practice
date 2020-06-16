@@ -12,7 +12,7 @@ public class FileWriterDemo {
 
     private static void writeToFile(File file) throws IOException{
         FileWriter fw = new FileWriter(file);
-        fw.write("Dighi");
+        fw.write("Rafi");
         fw.flush();
         fw.close();
     }
