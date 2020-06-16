@@ -21,7 +21,7 @@ class YourThread extends Thread{
 
     @Override
     public void run() {
-        mRef.printDocument(10, "Dighi'sProfile.pdf");
+        mRef.printDocument(10, "Fahim'sProfile.pdf");
     }
 }
 
@@ -36,7 +36,7 @@ class MyThread extends Thread{
     @Override
     public void run() {
         synchronized (pRef){
-            pRef.printDocument(10, "Mysha'sProfile.pdf");
+            pRef.printDocument(10, "Shafil'sProfile.pdf");
         }
     }
 }
