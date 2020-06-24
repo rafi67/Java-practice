@@ -7,5 +7,15 @@ public class AR {
             array[i] = 12;
         }
         System.out.println(array[0]);
+        int[][]array2 = {{1,2}, {3, 5}};
+
+        for(int i=0; i<array.length; i++){
+            for(int j=0; j<array.length; j++){
+                System.out.println(array2[i][j]);
+            }
+        }
+        int[][]a2 = {{3,2}, {1,4}};
+        System.out.println(a2[0][0]);
+        System.out.println(a2[0][1]);
     }
 }
