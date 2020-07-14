@@ -17,7 +17,7 @@ public class RunTimeDemo {
     public static void main(String [] args){
         Bike b = new Splender();
         b.run();
-        Bike b2 = new Bike();
+        Bike b2 = new Bike(); // upcasting
         b2.run();
     }
 }
