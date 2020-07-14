@@ -16,6 +16,5 @@ class Dog3 extends Animal3{
 public class TestSuper3{
     public static void main(String [] args){
         Dog3 d = new Dog3();
-        System.gc();
     }
 }
