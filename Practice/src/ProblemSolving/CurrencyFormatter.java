@@ -3,9 +3,6 @@ package ProblemSolving;
 import java.text.*;
 import java.util.*;
 import java.util.Locale;
-import java.io.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class CurrencyFormatter {
     private static String US(double payment){
