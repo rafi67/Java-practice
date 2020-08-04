@@ -3,7 +3,7 @@ package ConsoleClass;
 import java.io.Console;
 
 public class CosoleDemo1 {
-    private static void Work(){
+    private static void work(){
         try {
             Console c = System.console();
             System.out.println("Enter your name: ");
@@ -20,6 +20,6 @@ public class CosoleDemo1 {
     }
 
     public static void main(String [] args){
-        Work();
+        work();
     }
 }
