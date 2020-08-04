@@ -2,7 +2,7 @@ package ObjectOutputStream;
 
 import java.io.*;
 
-public class ObjectOutputStreamDemo {
+public class ObjectOutputStreamDemo implements Serializable {
     public static void main(String Rafi[]) throws IOException, ClassNotFoundException{
         File file = new File("C:\\EdurekaIO\\serializedFile.bin");
         VehicleInfo v = new VehicleInfo(4, 6, "Audi");
