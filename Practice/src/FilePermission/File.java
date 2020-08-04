@@ -1,7 +1,6 @@
 package FilePermission;
 
-import java.io.FilePermission;
-import java.io.IOException;
+import java.io.*;
 import java.security.PermissionCollection;
 
 public class File {
@@ -15,6 +14,10 @@ public class File {
         if(permission.implies(new FilePermission(srg, "read,write")))
             System.out.println("Read, Write permission granted to specific path at "+srg);
         else System.out.println("No permission granted to the specific path at "+srg);
+        System.out.println(file1.getActions());
+        System.out.println(file2.getActions());
+        System.out.println(file1.hashCode());
+        System.out.println(file1.equals(file2));
     }
 
     public static void main(String[] args) throws IOException {
