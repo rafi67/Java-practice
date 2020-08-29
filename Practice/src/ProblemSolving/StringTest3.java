@@ -56,10 +56,14 @@ public class StringTest3 {
         Collections.sort(smallest2);
         int size1 = (smallest2.size())-1;
         int size2 = (largest2.size())-1;
-        if(largest2.size()==0) largest = smallest2.get(size1);
         if(largest2.size()!=0) largest = largest2.get(size2);
         if(smallest2.size()!=0) smallest = smallest2.get(0);
-        if(smallest2.size()==0) smallest = largest2.get(0);
+        if(largest2.size()==0 && smallest2.size()==0){
+            largest = s;
+            smallest = s;
+        }
+        else if(largest2.size()==0) largest = smallest2.get(size1);
+        else if(smallest2.size()==0) smallest = largest2.get(0);
         return smallest + "\n" + largest;
     }
 
