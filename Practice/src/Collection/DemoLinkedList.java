@@ -30,8 +30,47 @@ public class DemoLinkedList {
         System.out.println(list);
     }
 
+    private static void test3() {
+        LinkedList<String>list = new LinkedList<>();
+        list.add("Rezuan");
+        list.add("Rafi");
+        list.add("Shafil");
+        list.add("Fahim");
+        System.out.println(list);
+        list.removeFirstOccurrence("Rezuan");
+        System.out.println(list);
+        list.removeLastOccurrence("Fahim");
+        System.out.println(list);
+        LinkedList<String>list2 = new LinkedList<>();
+        list2.add("Faria");
+        list.addAll(1,list2);
+        System.out.println(list);
+        list.removeAll(list2);
+        System.out.println(list);
+        list.clear();
+        list2.clear();
+    }
+
+    private static void test4() {
+        LinkedList<String>list = new LinkedList<>();
+        list.add("Rafi");
+        list.add("Fahim");
+        list.add("Shafil");
+        list.add("Rezuan");
+        list.add("Shakil");
+        list.add("Shamim");
+        Iterator itr = list.descendingIterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
+        System.out.println(list);
+        list.clear();
+    }
+
     public static void main(String... args) {
         test();
         test2();
+        test3();
+        test4();
     }
 }
