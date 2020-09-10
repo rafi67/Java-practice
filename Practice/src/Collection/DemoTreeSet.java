@@ -1,6 +1,5 @@
 package Collection;
 
-import javax.swing.text.html.ListView;
 import java.util.*;
 
 public class DemoTreeSet {
@@ -82,12 +81,27 @@ public class DemoTreeSet {
         set.clear();
     }
 
+    private static void test6() {
+        TreeSet<Book4>set = new TreeSet<>();
+        Book4 b1 = new Book4(1, "Let us C");
+        Book4 b2 = new Book4(2, "We are friends forever");
+        Book4 b3 = new Book4(3, "Pure love");
+        set.add(b1);
+        set.add(b2);
+        set.add(b3);
+        for(Book4 b:set){
+            System.out.println("ID:"+b.id+" Name of the book is "+b.name);
+        }
+        set.clear();
+    }
+
     public static void main(String... args) {
         test();
         test2();
         test3();
         test4();
         test5();
+        test6();
     }
 }
 
@@ -103,6 +117,22 @@ class Library implements Comparable<Library> {
     public int compareTo(Library l) {
         if(id>l.id) return 1;
         else if(id<l.id) return -1;
+        else return 0;
+    }
+}
+
+class Book4 implements Comparable<Book4>{
+    int id;
+    String name;
+    Book4(int id, String name){
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public int compareTo(Book4 o) {
+        if(id>o.id) return 1;
+        else if(id<o.id) return -1;
         else return 0;
     }
 }
