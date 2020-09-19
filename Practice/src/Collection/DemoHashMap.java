@@ -12,7 +12,7 @@ public class DemoHashMap {
         System.out.println(Customer.get(1));
         System.out.println(Customer.get(2));
         System.out.println("Traversing Hash Map");
-        for(Map.Entry m: Customer.entrySet()){
+        for(Map.Entry<Integer, String> m: Customer.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         Customer.clear();
@@ -25,7 +25,7 @@ public class DemoHashMap {
         map.put(3, "Strawberry");
         map.put(1, "Milk");
         System.out.println("Traversing element of map");
-        for(Map.Entry m:map.entrySet()){
+        for(Map.Entry<Integer,String> m:map.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         map.clear();
@@ -38,19 +38,19 @@ public class DemoHashMap {
         map.put(102, "Fosail");
         map.put(103, "Khaled");
         System.out.println("After invoking put() method");
-        for(Map.Entry m:map.entrySet()){
+        for(Map.Entry<Integer,String> m:map.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         map.putIfAbsent(104, "Amit");
         System.out.println("After invoking putIfAbsent() method");
-        for(Map.Entry m:map.entrySet()){
+        for(Map.Entry<Integer,String> m:map.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         HashMap<Integer,String>map2 = new HashMap<>();
         map2.put(105, "Jay");
         map2.putAll(map);
         System.out.println("After invoking putAll() method");
-        for(Map.Entry m:map2.entrySet()){
+        for(Map.Entry<Integer,String> m:map2.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         map.clear();
@@ -82,22 +82,22 @@ public class DemoHashMap {
         hm.put(104, "Amazon");
         hm.put(105, "Oracle");
         System.out.println("Initial list of elements");
-        for(Map.Entry m:hm.entrySet()){
+        for(Map.Entry<Integer,String> m:hm.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         hm.replace(102, "Google");
         System.out.println("Updated list of hash map");
-        for(Map.Entry m:hm.entrySet()){
+        for(Map.Entry<Integer,String> m:hm.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         hm.replace(105, "Oracle", "SunMicroSystem");
         System.out.println("Updated list of hash map");
-        for(Map.Entry m:hm.entrySet()){
+        for(Map.Entry<Integer,String> m:hm.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         hm.replaceAll((k,v)-> "Apple");
         System.out.println("Updated list of hash map");
-        for(Map.Entry m:hm.entrySet()){
+        for(Map.Entry<Integer,String> m:hm.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         hm.clear();
