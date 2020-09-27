@@ -41,19 +41,14 @@ public class DemoSorting {
 
     private static void test4() {
         ArrayList<Student1>al = new ArrayList<>();
-        ArrayList<String>al2 = new ArrayList<>();
         al.add(new Student1("Shafil"));
         al.add(new Student1("Anis"));
         al.add(new Student1("Bithisa"));
+        Collections.sort(al);
         for(Student1 s:al){
-            al2.add(s.name);
-        }
-        Collections.sort(al2);
-        for(String s:al2){
             System.out.println(s);
         }
         al.clear();
-        al2.clear();
     }
 
     public static void main(String... args) {
@@ -64,14 +59,14 @@ public class DemoSorting {
     }
 }
 
-class Student1 implements Comparable<Student>{
+class Student1 implements Comparable<Student1>{
     public String name;
     public Student1(String name){
         this.name = name;
     }
 
     @Override
-    public int compareTo(Student person) {
+    public int compareTo(Student1 person) {
         return name.compareTo(person.name);
     }
 }
