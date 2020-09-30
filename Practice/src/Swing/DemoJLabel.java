@@ -7,6 +7,7 @@ import java.awt.event.*;
 public class DemoJLabel extends Frame implements ActionListener {
     JButton b; JLabel l; JTextField tf;
     DemoJLabel(){
+        test1();
         test2();
     }
 
